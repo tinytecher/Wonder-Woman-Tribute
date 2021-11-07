@@ -1,0 +1,298 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+
+body{
+	font-family: 'comic book', Arial, sans-serif;
+	font-size: 16px;
+	color: rgb(36, 49, 49);
+}
+
+/* Nav Bar */
+#nav-bar{
+	position: sticky;
+	background-color: whitesmoke;
+	border-bottom: 2px solid rgb(228, 52, 52);
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100vw;
+}
+
+#nav-bar ul li{
+	display: inline; 
+	align-items: center;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1em;
+	color: black;
+	padding: 5px;
+}
+
+#nav-bar ul li a {
+	text-decoration: none;
+	list-style: none;
+	color: rgb(70, 68, 68);
+}
+
+#nav-bar ul li a:hover {
+	color: rgb(228, 52, 52);
+}
+
+/*Wonder Woman Title*/
+#title {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#title-image{
+	width: 60%;
+}
+
+/* Banner Image & Quote */
+#img-div {
+	text-align: center;
+}
+
+img {
+	width: 55%;
+}
+
+#img-caption p {
+	position: relative;
+	text-align: center;
+	/*height: 100px;*/
+	font-size: 1em;
+	color: rgb(59, 59, 59);
+	padding: 5px 20px;
+	margin-bottom: 20px;
+}
+
+/*History of Wonder Woman Container*/
+h1{
+	text-align: center;
+	font-size: 1.75em;
+}
+
+#info-container{
+	border: 2px dotted black;
+	width: 90vw;
+	margin: 5px auto;
+	padding: 15px;
+}
+
+.info-text{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#info-container p{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.75em;
+	text-align: center;
+	padding: 10px;
+	color: rgb(51, 51, 51);
+	
+}
+
+/*Flip Card Boxes*/
+h2{
+	text-align: center;
+	font-size: 2em;
+	margin: 50px 0 15px 0;
+	text-decoration: underline;
+}
+
+#flip-card-box{
+	width: 100vw;
+	justify-content: center; 
+	margin-bottom: 40px;
+}
+
+.card-container{
+	display: flex;
+	justify-content: center;
+	perspective: 1000px; /*3D effect*/	
+}
+
+.card {
+	position: relative;
+	margin: 10px;
+	border: 2px solid rgb(46, 44, 44);
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	border-radius: 10%;
+	max-width: 300px;
+	height: 300px;
+	width: 100vw;
+}
+
+.card-container:hover .card{
+	transform: rotateY(180deg);
+}
+
+.card-front, .card-back  {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.card-front {
+	color: #fff;
+}
+
+.card-front img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+}
+
+.card-back {
+	background-color: rgb(132, 255, 249);
+	color: rgb(51, 51, 51);
+	transform: rotateY(180deg);
+	border-radius: 10%;
+	text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 769px){
+	
+	/*Wonder Woman Title*/
+	#title {
+		margin-top: 45px;
+	}
+
+	#title-image{
+		width: 35%;
+	}
+
+	#image {
+		width: 300px;
+		text-align: center;
+		margin-top: 20%;
+	}
+
+	/* Banner Image & & Quote */
+	#banner-container{
+		display: flex;
+		height: 343px;
+		margin-bottom: 30px;
+	}
+
+	#img-div {
+		position: relative;
+		left: 15%;
+		top: -20%;
+		width: 320px;
+	}
+
+	#img-caption p {
+		font-size: 16px;
+		text-align: center;
+		position: relative;
+		width: 42%;
+		top: 10%;
+		left: 25%;
+	}
+	
+	/*Flip Card Box Section*/
+	#flip-card-box{
+		display: flex;
+		padding: 20px;
+	}
+
+	.card-container{
+		height: 60vh;
+		width: 50%;
+	}
+	
+	.card {
+		flex-direction: row;
+		width: 90%;
+		height: 70%;
+	}
+}
+
+@media (min-width: 1200px){
+	/*Wonder Woman Title*/
+	#title {
+		margin-top: 25px;
+	}
+
+	#title-image{
+		width: 26%;
+	}
+
+	#image {
+		width: 300px;
+		text-align: center;
+	}
+
+	/* Banner Image & & Quote */
+	#banner-container{
+		display: flex;
+		height: 343px;
+		margin-bottom: 10px;
+	}
+
+	#img-div {
+		position: relative;
+		left: 15%;
+		top: -28%;
+		width: 320px;
+	}
+
+	#img-caption p {
+		font-size: 1.3em;
+		text-align: center;
+		position: relative;
+		width: 42%;
+		top: 15%;
+		left: 25%;
+	}
+
+	/*History of Wonder Woman Container*/
+	#info-container p{
+		font-size: 1.2em;
+		text-align: center;
+		padding: 10px;
+		width: 70vw;
+		margin: 0 auto;	
+	}
+
+	/*Flip Card Box Section*/
+	#flip-card-box{
+		display: flex;
+		padding: 20px;
+	}
+
+	.card-container{
+		height: 60vh;
+		width: 50%;
+	}
+	
+	.card {
+		position: relative;
+		width: 85%;
+		height: 85%;
+	}
+	
+	.card-front, .card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
