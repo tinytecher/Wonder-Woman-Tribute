@@ -4,6 +4,9 @@
 
 This project is a Wonder Woman fan website created as part of the FreeCodeCamp curriculum. It showcases various aspects of Wonder Woman's character, history, and fun facts. The project is built using HTML and CSS and serves as a hands-on learning experience to enhance HTML and CSS skills.
 
+## Project Deployment
+
+The Wonder Woman Fan Website is deployed using Netlify. You can visit the deployed site by clicking the following link: [Wonder Woman Tribute](https://wonder-woman-tribute.netlify.app)
 ## Main Learnings from CSS
 
 Throughout this project, I gained a deeper understanding of various CSS concepts and techniques. Some of the key learnings include:
@@ -29,10 +32,6 @@ Throughout this project, I gained a deeper understanding of various CSS concepts
 In this project, I included a CSS reset file to ensure consistent and predictable styling across different browsers. The CSS reset helps to normalize default browser styles and behaviors, providing a clean slate to apply custom styling. By using the CSS reset, I ensure that my project has a solid foundation and reduces potential cross-browser inconsistencies.
 
 The provided CSS reset file adopts best practices from various sources, such as Eric Meyer, HTML5 Doctor, and HTML5 Boilerplate, to establish a baseline for styling elements and prevent unexpected default styles.
-
-## Project Deployment
-
-The Wonder Woman Fan Website is deployed using Netlify. You can visit the deployed site by clicking the following link: [Wonder Woman Tribute](https://wonder-woman-tribute.netlify.app)
 
 ## Acknowledgments
 
