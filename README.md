@@ -1,4 +1,4 @@
-# Project: Wonder Woman Fan Website
+## Wonder Woman Fan Website
 
 <img width="493" alt="Screenshot 2023-08-15 at 15 26 55" src="https://github.com/tinytecher/Wonder-Woman-Tribute/assets/79761202/c17c3a60-d8b3-4ef6-998c-aefa61cb4176">
 
